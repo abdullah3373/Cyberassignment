@@ -1,6 +1,0 @@
-streamlit
-cryptography
-pillow
-pandas
-openpyxl
-# passlib[bcrypt] OPTIONAL - recommended for secure bcrypt hashing
