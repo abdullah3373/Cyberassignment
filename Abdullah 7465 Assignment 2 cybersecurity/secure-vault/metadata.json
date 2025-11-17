@@ -1,0 +1,5 @@
+{
+  "name": "Secure Vault",
+  "description": "A secure web application demonstration featuring user authentication, encrypted data storage, audit logging, and other essential security features. Built with React and TypeScript to showcase best practices in secure frontend development.",
+  "requestFramePermissions": []
+}
