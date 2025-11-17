@@ -1,157 +1,83 @@
-FinTech Secure Application – CY4053 Assignment 2
-BSFT - 7th Semester (Fall 2025)
-Instructor: Dr. Usama Arshad
-📌 Overview
-
-This is a secure FinTech mini-application developed for CY4053 – Cybersecurity for FinTech (Assignment 2).
-It demonstrates core cybersecurity concepts:
-
-Secure authentication
-
-Data encryption
-
-Input validation
-
-Session handling
-
-Error sanitization
-
-Audit logging
-
-FinTech-style transaction input
-
-File upload validation
-
-The application supports manual cybersecurity testing with 20+ test cases.
-
-🛠 Tech Stack
-
-Backend: Python Flask / (your choice)
-
-Frontend: HTML/CSS/JS (or Streamlit UI if chosen)
-
-Database: SQLite / MySQL
-
-Encryption: AES-256 (Fernet or PyCryptoDome)
-
-Password Hashing: bcrypt
-
-🔐 Security Features Implemented
-✔ 1. User Registration + Login
-
-Password hashing (bcrypt)
-
-Login rate limit / lockout
-
-Secure session tokens
-
-✔ 2. Password Strength Policy
-
-Minimum length
-
-Symbols, digits, uppercase, lowercase
-
-✔ 3. Input Validation & Sanitization
-
-Prevents SQL injection
-
-Prevents XSS
-
-Rejects over-length input
-
-✔ 4. Session Management
-
-Auto-logout after inactivity
-
-Secure cookies
-
-Logout button clears session
-
-✔ 5. Secure Database Storage
-
-Passwords hashed
-
-Transactions encrypted (AES-256)
-
-Logs protected
-
-✔ 6. Error Handling
-
-No stack traces exposed
-
-Generic error messages
-
-✔ 7. Encryption/Decryption Tool
-
-Allows users to:
-
-Enter text
-
-Encrypt using AES
-
-Decrypt using stored key
-
-View encrypted data
-
-✔ 8. Audit Logs
-
-Every user action logged: login, logout, updates
-
-✔ 9. Profile Update Page
-
-Email, username update
-
-Validations applied
-
-✔ 10. File Upload Validation
-
-Accept safe file types only
-
-Reject executable/malicious files
-
-📂 Project Folder Structure
-/project
-│── app.py
-│── requirements.txt
-│── README.md
-│── /templates
-│── /static
-│── /database
-│── /encryption
-│── /logs
-
-▶ How to Run
-1. Install Requirements
-pip install -r requirements.txt
-
-2. Run Application
-python app.py
-
-3. Open in Browser
-http://127.0.0.1:5000/
-
-🧪 Manual Cybersecurity Testing
-
-A complete test case document (20 tests) is included in the /documentation folder.
-
-Tests include:
-
-SQL injection
-
-XSS
-
-Weak passwords
-
-Unauthorized access
-
-Session expiry
-
-Encryption/decryption
-
-Input validation
-
-File upload restrictions
-
-Secure error handling
-
-Data confidentiality
+# FinTech Secure Application – CY4053 Assignment 2
+### Cybersecurity for FinTech (Fall 2025)  
+### Instructor: Dr. Usama Arshad  
+### BSFT – 7th Semester  
+
+---
+
+## 📌 Overview
+This is a secure FinTech mini-application developed for **CY4053 Assignment 2**.
+
+It demonstrates essential cybersecurity features used in real-world FinTech systems, including:
+
+- Secure user authentication  
+- Input validation  
+- Password hashing  
+- AES-256 encryption/decryption  
+- Secure storage  
+- Session management  
+- File upload validation  
+- Audit logging  
+- Safe error handling  
+
+Designed specifically for **manual cybersecurity testing (20+ test cases)**.
+
+---
+
+## 🛠 Tech Stack
+- **Backend:** Python Flask  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Database:** SQLite  
+- **Security:**  
+  - bcrypt password hashing  
+  - AES-256 encryption  
+  - Secure session cookies  
+
+---
+
+## 🔐 Security Features Implemented
+
+### ✔ 1. User Registration & Login
+- Password hashing (bcrypt)  
+- Login lockout after multiple failed attempts  
+- Secure session handling  
+
+### ✔ 2. Strong Password Policy
+- Uppercase, lowercase, digits, symbols  
+- Minimum length required  
+
+### ✔ 3. Input Validation & Sanitization
+- Blocks SQL Injection  
+- Blocks XSS attempts  
+- Length limits  
+- Strict numeric validation  
+
+### ✔ 4. Session Management
+- Auto session expiry  
+- Secure logout  
+- Unauthorized access protection  
+
+### ✔ 5. AES Encryption / Decryption Tool
+- User can enter text → Encrypt with AES-256  
+- Decrypt encrypted text  
+- Demonstrates confidentiality  
+
+### ✔ 6. Audit Logging
+Logs events like:
+- Login / Logout  
+- Profile updates  
+- Encryption operations  
+- File upload attempts  
+
+### ✔ 7. File Upload Validation
+- Only safe file types allowed  
+- Rejects `.exe`, `.js`, `.php` etc.  
+- MIME-Type + size validation  
+
+### ✔ 8. Safe Error Handling
+- No stack traces shown  
+- Generic user-safe messages  
+
+---
+
+## 📂 Project Structure
